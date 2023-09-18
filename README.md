@@ -1,5 +1,5 @@
 # windows-auto-minhook
-Improve minhook for Windows app
+Improve minhook for Windows app for NIM languages
 
 This is a special improvement for minhook just for Windows app.
 
