@@ -26,7 +26,7 @@ macro faddr*(body: untyped): untyped =
   result.add(newIntLitNode(nameToAddress[input[0]]))
   
 
-  echo "FADDR:\n" & $result.toStrLit
+  #echo "FADDR:\n" & $result.toStrLit
 
 
 # macro caddr*(body: untyped): untyped =
@@ -39,7 +39,7 @@ macro faddr*(body: untyped): untyped =
 #   result.add(newIntLitNode(nameToAddress[input[0]]))
   
 
-  echo "FADDR:\n" & $result.toStrLit
+# echo "FADDR:\n" & $result.toStrLit
 
 
 macro fptr*(body: untyped) : untyped =
@@ -173,7 +173,7 @@ macro fptr*(body: untyped) : untyped =
     result.add(varSection)
     result.add(aliasProc)
     
-    echo "FUNC:\n" & $result.toStrLit
+    #echo "FUNC:\n" & $result.toStrLit
 
 macro setupAllHook*(): untyped =
 
@@ -187,7 +187,7 @@ macro setupAllHook*(): untyped =
 
     result.add(newCall)
 
-  echo "SETUP:\n" & $result.toStrLit
+  #echo "SETUP:\n" & $result.toStrLit
 
 var 
   baseAddress: int = 0
